@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="flex-container">
+        <div class="logo"><img src="../imagens/logo2.png"/></div>
+        <div class="menu">
+          <nav>
+            <ul>
+            <input type="text" class="pesquisa" placeholder="Pesquisar" maxlength="45"/></li>
+          <img class="search"src="../imagens/search_icon_153438.png" id="btnbusca" alt="buscar"/>
+              <li><a href="carrinho.html"><img id="carrinho" src = "../imagens/carrinho.png"/></a></li>
+              <li><a href="login.html"><img id ="usuario"src = "../imagens/Usuário.png"/></a></li>
+              <li><a href="cadastro.html"><img id ="cadastro" src = "../imagens/cadastro.png"/></a></li>
+              
+              <div class="barrinha" onclick="menuToggle()">
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              </div>
+            </ul>          
+          </nav>
+           </div>
+            </div>  
+          <div id="menu-area">
+            <ul>
+              <li><a href="farmacia.html">Home</a></li>
+              <li><a href="nossasLojas.html">Nossas Lojas</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Agendamento</a></li>
+              <li><a href="#">Em alta</a></li>
+              <li><a href="#">Cadastrar</a></li>
+            </ul>
+    </header> 
+    <main>
+      <section class="container">
+        <div class="banner">
+
+        </div>
+      
+          
+          <class class="products"> 
+            <div class="product" onclick="select()">    
+              <img class="products-photo" src="../imagens/redbull.jpg" />
+                                 <div class="products-name">Redbull</div>                               
+                                 <div class="products-desc">250ml</div>
+                                 <div class="price">R$15,00</div>
+           </div>       
+
+           <div class="product">    
+             <img class="products-photo" src="../imagens/dipirona.jpg" />
+            <div class="products-name">Dipirona</div>       
+            <div class="products-desc">300g</div>
+            <div class="price">R$20,00</div>
+</div>       
+
+<div class="product">    
+    <img class="products-photo" src="../imagens/aspirina.jpg" />
+  <div class="products-name">Aspirina</div>
+  <div class="products-desc">500g </div>
+  <div class="price">R$25,00</div>
+</div>       
+
+<div class="product">    
+  <img class="products-photo" src="../imagens/novalgina.jpg" />
+<div class="products-name">Novalgina</div>
+<div class="products-desc">300g </div>
+<div class="price">R$16,00</div>
+</div> 
+           </div>  
+      </div>
+      </section>
+    </main>
+    <section class="wrapper">
+      <nav>
+        <a href="farmacia.html">
+          <img src="../imagens/home.png" class="home-resp">
+        </a>
+        
+        <a href="carrinho.html">
+          <img src="../imagens/carrinho.png" class="car-resp">
+        </a>
+
+        <a href="login.html">
+          <img src="../imagens/Usuário.png" class="login-resp">
+        </a>
+      </nav>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

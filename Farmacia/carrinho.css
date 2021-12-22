@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+}
+.logo {
+  font-family: bebas neue;
+  font-size: 40px;
+  color: white;
+  margin-top: 15px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+.logo img {
+  width: 80px;
+  height: 85px;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 90px;
+  background-color: rgb(240, 228, 228);
+  border-radius: 3px 3px 20px 15px;
+}
+.pesquisa {
+  align-self: center;
+  border-radius: 13px;
+  padding: 13px;
+  height: 20px;
+  width: 400px;
+  margin-right: 40px;
+  background-color: rgb(236, 232, 232);
+  border: 2px solid rgb(82, 80, 80);
+  outline: 0;
+}
+input {
+  font-size: 16px;
+}
+input::placeholder {
+  font-size: 18px;
+}
+
+.search {
+  margin-top: 25px;
+  margin-left: 383px;
+  position: absolute;
+  height: 40px;
+  cursor: pointer;
+}
+
+#menu-area {
+  width: 0px;
+  height: 320px;
+  background-color: rgb(223, 39, 39);
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all ease.5s right;
+  position: absolute;
+  margin-left: 1135px;
+  right: 0px;
+}
+
+#menu-area ul a {
+  list-style: none;
+}
+#menu-area li a {
+  display: block;
+  padding: 12px;
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#menu-area li:hover {
+  color: grey;
+}
+.barrinha {
+  width: 22px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.barra {
+  height: 2px;
+  background-color: black;
+}
+
+/*Alinha os itens do ul/li*/
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+nav li,
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  margin-right: 80px;
+  color: white;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+nav a:hover {
+  color: rgb(82, 140, 155);
+}
+
+#carrinho {
+  width: 50px;
+  height: 50px;
+  margin-top: 3px;
+}
+#usuario {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+#carrinho:hover,
+#usuario:hover,
+#home:hover {
+  cursor: pointer;
+}
+
+#home {
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.sec-carrinho {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: bold;
+  height: 20px;
+  width: 250px;
+  margin: auto;
+  line-height: 10px;
+  margin-top: 10px;
+}
+
+.sec-carrinho2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  height: 20px;
+  width: 353px;
+  margin: auto;
+}
+
+.carrinho-principal {
+  height: 42px;
+  width: 352px;
+  margin: auto;
+  margin-top: 250px;
+}
+
+.carbtn {
+  background-color: #58af9b;
+  color: #fff;
+  border: none;
+  height: 50px;
+  line-height: 30px;
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+  font-size: 15pt;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.carbtn:hover {
+  color: black;
+}
+span.material-icons {
+  font-size: 22px;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  text-decoration: none;
+}
+
+.carrinhobtn {
+  margin: auto;
+  width: 280px;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: none;
+}
+
+#middle-image {
+  margin-top: -50px;
+  margin-left: 130px;
+}
+
+/*responsividade*/
+
+@media screen and (max-width: 500px) {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pointer,
+  .logo,
+  nav ul li a,
+  .barrinha {
+    display: none;
+  }
+  .menu {
+    width: auto;
+  }
+  .pesquisa {
+    margin-left: 30px;
+  }
+  .search {
+    margin-left: 310px;
+    margin-top: 5px;
+  }
+}
+/*responsividade*/
+
+@media screen and (max-width: 500px){
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+  *{
+      margin: 0;
+      padding: 0px;
+  }
+  body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .pointer,
+  .logo,
+  nav ul li a,
+  .barrinha{
+      display: flex;
+  }
+  .menu{
+      width: 100%;
+  }
+  .pesquisa{
+      margin-left: 30px;
+  }
+  .search{
+      margin-left: 310px;
+      margin-top: 5px;
+  }
+  .logo img {
+    width:70px;
+    height:70px;
+    margin-left: 20px;
+    margin-top: -5px;
+    display:none;
+  }
+  #login,
+#usuario,
+#home {
+  width:35px;
+  height:35px;
+}
+}
